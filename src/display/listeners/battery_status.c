@@ -61,7 +61,7 @@ static void periph_bat_update_cb(struct periph_bat_state state)
 				lv_arc_set_value(arc, state.level[i]);
 			}
 			if (lbl) {
-				lv_style_copy(&style_label, &lv_style_plain);
+				lv_style_set_y(&style_label, &lv_style_init);
 				style_label.text.color = lv_color_hex(0x76FF03); //light-green-accent-3
 				lv_label_set_text_fmt(lbl, "%d%%", state.level[i]);
 				lv_label_set_style(lbl, LV_LABEL_STYLE_MAIN, &style_label);
@@ -71,7 +71,7 @@ static void periph_bat_update_cb(struct periph_bat_state state)
 				lv_arc_set_value(arc, 0);
 			}
 			if (lbl) {
-				lv_style_copy(&style_label, &lv_style_plain);
+				lv_style_set_y(&style_label, &lv_style_init);
 				style_label.text.color = lv_color_hex(0x76FF03); //light-green-accent-3
 				lv_label_set_text(lbl, "--");
 				lv_label_set_style(lbl, LV_LABEL_STYLE_MAIN, &style_label);
