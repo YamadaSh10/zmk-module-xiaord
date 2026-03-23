@@ -59,6 +59,13 @@ static void periph_bat_update_cb(struct periph_bat_state state)
 		if (state.valid[i]) {
 			if (arc) {
 				lv_arc_set_value(arc, state.level[i]);
+				if (state.level[i] > 50) {
+					lv_obj_set_style_arc_color(lbl, lv_color_hex(0x76FF03), LV_STATE_DEFAULT); //light-green-accent-3
+				} else if (state.level[i] > 20) {
+					lv_obj_set_style_arc_color(lbl, lv_color_hex(0xFFFF00), LV_STATE_DEFAULT); //yellow-accent-2
+				} else {
+					lv_obj_set_style_arc_color(lbl, lv_color_hex(0xD50000), LV_STATE_DEFAULT); //red-accent-4
+				}
 			}
 			if (lbl) {
 				lv_label_set_text_fmt(lbl, "%d%%", state.level[i]);
@@ -73,6 +80,13 @@ static void periph_bat_update_cb(struct periph_bat_state state)
 		} else {
 			if (arc) {
 				lv_arc_set_value(arc, 0);
+				if (state.level[i] > 50) {
+					lv_obj_set_style_arc_color(lbl, lv_color_hex(0x76FF03), LV_STATE_DEFAULT); //light-green-accent-3
+				} else if (state.level[i] > 20) {
+					lv_obj_set_style_arc_color(lbl, lv_color_hex(0xFFFF00), LV_STATE_DEFAULT); //yellow-accent-2
+				} else {
+					lv_obj_set_style_arc_color(lbl, lv_color_hex(0xD50000), LV_STATE_DEFAULT); //red-accent-4
+				}
 			}
 			if (lbl) {
 				lv_label_set_text(lbl, "--");
