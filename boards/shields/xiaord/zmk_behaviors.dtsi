@@ -38,6 +38,7 @@
             INPUT_VIRTUAL_ZMK_BT_SEL_6      INPUT_VIRTUAL_ZMK_BT_SEL_7
             INPUT_VIRTUAL_ZMK_BT_SEL_8      INPUT_VIRTUAL_ZMK_BT_SEL_9
             INPUT_VIRTUAL_ZMK_BT_SEL_10     INPUT_VIRTUAL_ZMK_BT_SEL_11
+            INPUT_VIRTUAL_ZMK_LEFT_CLICK    INPUT_VIRTUAL_ZMK_RIGHT_CLICK
         >;
         bindings = <
             &bt BT_CLR     &bt BT_CLR_ALL
@@ -50,6 +51,7 @@
             &bt BT_SEL 6   &bt BT_SEL 7
             &bt BT_SEL 8   &bt BT_SEL 9
             &bt BT_SEL 10  &bt BT_SEL 11
+            &mkp LCLK      &mkp RCLK
         >;
     };
 

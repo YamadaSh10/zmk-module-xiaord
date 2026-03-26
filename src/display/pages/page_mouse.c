@@ -50,7 +50,7 @@ static void rclick_btn_cb(lv_event_t *e)
 		return;
 	}
 
-	ss_fire_key_event(INPUT_BTN_RIGHT);
+	ss_fire_behavior(INPUT_VIRTUAL_ZMK_LEFT_CLICK);
 }
 
 static void lclick_btn_cb(lv_event_t *e)
@@ -59,7 +59,7 @@ static void lclick_btn_cb(lv_event_t *e)
 		return;
 	}
 
-	ss_fire_key_event(INPUT_BTN_LEFT);
+	ss_fire_behavior(INPUT_VIRTUAL_ZMK_RIGHT_CLICK);
 }
 
 static void home_btn_cb(lv_event_t *e)

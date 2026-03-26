@@ -80,6 +80,15 @@
 #define INPUT_VIRTUAL_ZMK_BT_CLR_10     0x6A
 #define INPUT_VIRTUAL_ZMK_BT_CLR_11     0x6B
 
+/* ── Category 3: ZMK Mouse behavior codes ─────────────────────────────────── */
+/*
+ * 0x70 Left click
+ * 0x71 Right click
+ */
+
+#define INPUT_VIRTUAL_ZMK_LEFT_CLICK        0x70
+#define INPUT_VIRTUAL_ZMK_RIGHT_CLICK       0x71
+
 /* ── Page indices for use in DTS overlays ───────────────────────────────── */
 
 #define XIAORD_PAGE_HOME   0
