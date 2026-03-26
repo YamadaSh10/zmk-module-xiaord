@@ -75,7 +75,7 @@ static void home_btn_cb(lv_event_t *e)
 static int page_mouse_create(lv_obj_t *screen)
 {
 	/* Row 1: LCLICK / RCLICK */
-	s_usb_btn = ui_create_circle_btn(screen, LV_SYMBOL_LEFT,   -33, 15, lclick_btn_cb,  NULL);
+	ui_create_circle_btn(screen, LV_SYMBOL_LEFT,   -33, 15, lclick_btn_cb,  NULL);
 	ui_create_circle_btn(screen, LV_SYMBOL_RIGHT,  33, 15, rclick_btn_cb,  NULL);
 
 	/* Row 2: HOME */
