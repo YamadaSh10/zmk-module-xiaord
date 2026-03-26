@@ -25,3 +25,9 @@ void ss_navigate_to(uint8_t page_idx);
  * @param code  INPUT_VIRTUAL_POS_* or INPUT_VIRTUAL_ZMK_* constant
  */
 void ss_fire_behavior(input_virtual_code code);
+
+/**
+ * Fire a key event by sending a press+release pair.
+ * @param code  INPUT_VIRTUAL_POS_* or INPUT_VIRTUAL_ZMK_* constant
+ */
+void ss_fire_key_event(input_virtual_code code);

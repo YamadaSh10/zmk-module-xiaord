@@ -85,3 +85,4 @@
 #define XIAORD_PAGE_HOME   0
 #define XIAORD_PAGE_CLOCK  1
 #define XIAORD_PAGE_BT     2
+#define XIAORD_PAGE_MOUSE  3

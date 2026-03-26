@@ -14,6 +14,7 @@
 #define PAGE_HOME  0
 #define PAGE_CLOCK 1
 #define PAGE_BT    2
+#define PAGE_MOUSE 3
 
 /* ── Per-page operations interface ────────────────────────────────────── */
 
