@@ -88,6 +88,12 @@ void ss_fire_behavior(input_virtual_code code)
 	input_report(s_vkey, INPUT_EV_ZMK_BEHAVIORS, code, 0, true, K_NO_WAIT);
 }
 
+void ss_fire_key_event(input_virtual_code code)
+{
+	input_report(s_vkey, INPUT_EV_KEY, code, 1, true, K_NO_WAIT);
+	input_report(s_vkey, INPUT_EV_KEY, code, 0, true, K_NO_WAIT);
+}
+
 /* ── Color theme ─────────────────────────────────────────────────────────── */
 
 static void xiaord_initialize_color_theme(void)
