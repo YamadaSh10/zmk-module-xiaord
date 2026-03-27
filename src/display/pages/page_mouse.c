@@ -46,7 +46,7 @@ static lv_obj_t *s_scroll_circle;
 /* ── Callbacks ──────────────────────────────────────────────────────────── */
 static void rclick_btn_cb(lv_event_t *e)
 {
-	if ((lv_event_get_code(e) != LV_EVENT_CLICKED) && (mouse_state != STATE_DEFAULT)) {
+	if ((lv_event_get_code(e) != LV_EVENT_CLICKED) || (mouse_state != STATE_DEFAULT)) {
 		return;
 	}
 
@@ -55,7 +55,7 @@ static void rclick_btn_cb(lv_event_t *e)
 
 static void lclick_btn_cb(lv_event_t *e)
 {
-	if ((lv_event_get_code(e) != LV_EVENT_CLICKED) && (mouse_state != STATE_DEFAULT)) {
+	if ((lv_event_get_code(e) != LV_EVENT_CLICKED) || (mouse_state != STATE_DEFAULT)) {
 		return;
 	}
 
